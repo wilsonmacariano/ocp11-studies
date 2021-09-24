@@ -1,0 +1,44 @@
+* Introduction
+  Document learning and import points for OCP 11 Java Certification.
+
+  
+* Comments
+
+#+begin_src java
+  // Single line comment
+  
+  /*
+    Multiline comment
+  */
+  
+  /**
+     Javadoc
+  */
+#+end_src
+
+Code below won't compile
+#+begin_src java
+  /*
+    /*
+    Multiline
+    */
+    ,*/
+#+end_src
+
+Testing another one:
+#+begin_src java
+  
+  public class Car {
+      public Car() {
+      }
+  
+      public void accelerate() {
+          System.out.println("Accelerating...");
+      }
+  
+      public static void main(String[] args) {
+          new Car().accelerate();
+      }
+  }
+  
+#+end_src
